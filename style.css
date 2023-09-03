@@ -23,3 +23,35 @@ h1, h3 {
 #locationInfo{
     color: black;
 }
+
+
+/* index */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh; /* This makes the container take up the full viewport height */
+    color: white;
+}
+
+h1{
+    font-family: Montserrat;
+font-size: 100px;
+font-weight: 700;
+line-height: 122px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+
+.h1 {
+    text-align: center;
+}
+
+#fetchDataButton {
+    margin-top: 20px; /* Add some top margin to separate the button from the h1 */
+    padding: 10px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
