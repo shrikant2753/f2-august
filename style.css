@@ -1,0 +1,25 @@
+/* data */
+/* style.css */
+
+/* Style for the container */
+.container {
+    text-align: center; /* Center-align the content */
+    margin-top: 20px; /* Add top margin to separate from headings */
+}
+
+/* Style for the headings */
+h1, h3 {
+    text-align: center; /* Center-align the headings */
+    margin-bottom: 10px; /* Add bottom margin to separate from the map */
+}
+
+/* Style for the map */
+#map {
+    display: block; /* Ensure the map is displayed as a block element */
+    margin: 20px auto; /* Center the map horizontally and add top and bottom margin */
+    max-width: 100%; /* Make sure the map does not exceed the container width */
+}
+
+#locationInfo{
+    color: black;
+}
