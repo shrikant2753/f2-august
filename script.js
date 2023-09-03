@@ -21,6 +21,7 @@ function fetchWeatherData(latitude, longitude) {
         });
 }
 
+// Function to display weather info in the DOM
 function displayWeatherInfo(data) {
     const weatherInfoContainer = document.createElement('div');
     weatherInfoContainer.classList.add('weather-info');
@@ -66,7 +67,26 @@ function displayWeatherInfo(data) {
     const container = document.querySelector('.container');
     container.appendChild(weatherInfoContainer);
 }
+// function displayWeatherInfo(data) {
+//     const weatherInfoContainer = document.getElementById('weatherData');
 
+//     // Create an HTML string to hold all the weather information
+//     const weatherInfoHTML = document.createElement('div');
+
+//     weatherInfoHTML.innerHTML = `
+//         <div>City: ${data.name}</div>
+//         <div>Wind Speed: ${data.wind.speed} m/s</div>
+//         <div>Humidity: ${data.main.humidity}%</div>
+//         <div>Time Zone: ${data.timezone}</div>
+//         <div>Pressure: ${data.main.pressure} hPa</div>
+//         <div>Wind Direction: ${data.wind.deg}°</div>
+//         <div>UV Index: ${data.uv ? data.uv : 'N/A'}</div>
+//         <div>Feels Like: ${data.main.feels_like}°C</div>
+//     `;
+
+//     // Set the HTML content of the weatherData container
+//     weatherInfoContainer.append(weatherInfoHTML);
+// }
 
 // Function to fetch geolocation and display Google Map
 function fetchGeolocation() {
@@ -101,7 +121,23 @@ function displayGoogleMap(latitude, longitude) {
     mapIframe.style.border = '0';
 
     // Append the map to the container
+    const head = `<h2>Welcome To The Weather App</h2>
+    <h3>Here is your current location</h3>
+    <div class='info'>
+        <div class="lat">
+            <div>lat:</div>
+            ${latitude}
+        </div>
+
+        <div class="lon">
+            <div>long:</div>
+            ${longitude}
+        </div>
+    </div>`
+
+
     const container = document.querySelector('.container');
+    container.innerHTML = head;
     container.appendChild(mapIframe);
 }
 

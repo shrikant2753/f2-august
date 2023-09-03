@@ -54,4 +54,17 @@ text-align: center;
     padding: 10px;
     padding-right: 100px;
     padding-left: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+}
+
+.lat, .lon{
+    display: flex;
+    flex-direction:row;
+    padding: 10px  20px; 
 }
